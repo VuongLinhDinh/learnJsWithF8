@@ -23,7 +23,7 @@ console.log(fulName.length);
 
 // Làm việc với chuỗi
 
-let myString = "Chào cậu, tớ tên Linh hân hạnh được làm quen!";
+let myString = " Chào cậu, tớ tên Linh hân hạnh được làm quen! ";
 let testString =
   "                                               *\n" +
   "                                              * *\n" +
@@ -52,10 +52,25 @@ console.log("Độ dài chuỗi là: " + myString.length); // => đọ dài chu�
 // 2. Find index
 console.log("vị trí kí tự cần tìm: " + myString.indexOf("Linh")); // => Tìm vị trí index của kí tự
 // 3. Cut string
-console.log(myString.slice(-3, -1));
+// console.log(myString.slice(-3, -1));
 // 4. Replace
+/** 
+console.log(myString.replace("Linh", "VanAnh")); // thay the mot tu
+vD: muon thay the nhieu tu thi su dung bieu thuc chinh quy
+console.log(myString.replace(/Linh/g, "VanAnh")); // thay the nhieu tu
+ * 
+*/
 // 5. Convert to upper case
 // 6. Convert to lower case
-// 7. Trim
-// 8. Split
+console.log(myString.toUpperCase()); // Chuyển sang chữ hoa
+console.log(myString.toLowerCase()); // Chuyển sang chữ thuong
+// 7. Trim => loai bo khoang trang o hai dau
+console.log(myString.trim());
+// 8. Split => cat mo chuoi thanh array nhung chuoi phai co mot diem chung nao do
+let languages = "Js, PHP, Python";
+console.log(languages.split(", ")); // => ơ đây là dau "," va " "
+// vd khac: muon tach tung chu trong mot tu chi cần chuyển môt chuỗi rỗng
+
 // 9. Get a character by index
+console.log(myString.charAt(2)); // cach 1: tra ve chuoi rong neu index khong ton tai
+console.log(myString[1]); // cach 2: tra ve undefined neu index khong ton tai
